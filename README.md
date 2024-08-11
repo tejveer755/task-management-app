@@ -20,6 +20,9 @@ A task management application built with Node.js and Express for the backend, an
 - **Frontend:** React.js
 - **Backend:** Node.js, Express.js
 - **Database:** MongoDB
+  
+## Backend Repository
+[View Task-Management_app backend repository](https://github.com/tejveer755/task-management-app-backend.git)
 
 ## Installation
 
