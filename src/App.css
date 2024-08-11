@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
   margin: 0;
@@ -8,22 +8,17 @@
   box-sizing: border-box;
 }
 
-main {
-  width: 1500px;
-  height: fit-content;
-  margin: 28px 21px 18px 21px;
-  /* overflow: hidden; */
-}
 
 .search_box {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 1490px;
+  width: 95%;
   padding: 20px;
   height: 100px;
   border-radius: 20px;
+  margin: 25px auto;
   background-color: #ECEDEE;
   box-shadow: 0px 4px 2px #7a7a7ab1;
 }
@@ -72,6 +67,7 @@ main {
 
 section {
   margin: 0 auto;
+  width: 95%;
   height: 730px;
   margin-top: 54px;
   white-space: nowrap;
@@ -89,8 +85,11 @@ section {
   background-color: #ECEDEE;
   box-shadow: 0px 4px 2px #7a7a7ab1;
   padding: 18px 43px 24px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   margin-bottom: 16px;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
 }
 
 .icon {
@@ -101,19 +100,19 @@ section {
   padding: 8px;
 }
 
-.squre_card h2 {
+.square_card h2 {
   color: #797979;
-  margin: 20px 0;
-  font-size: 14px;
-  font-weight: 300;
+  /* margin: 20px 0; */
+  font-size: 15px;
+  /* font-weight: 300; */
 }
 
-.squre_card h3 {
+.square_card h3 {
   font-size: 28px;
-  font-weight: 300;
+  font-weight: 700;
 }
 
-.squre_card h3 span {
+.square_card h3 span {
   font-size: 18px;
 }
 
@@ -126,7 +125,7 @@ section {
   color: white;
   height: 48px;
   text-transform: capitalize;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   cursor: pointer;
   margin-bottom: 20px;
 }
@@ -159,7 +158,8 @@ section {
   margin: 20px auto;
   padding-bottom: 10px;
   font-size: 20px;
-  font-family: "Poppins";
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
 }
 
 .all_tasklist .empty_msg p {
@@ -239,7 +239,7 @@ section {
 }
 
 .task_card h3 {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   text-transform: capitalize;
   margin-bottom: 10px;
   font-size: 18px;
@@ -262,7 +262,7 @@ section {
   font-weight: 700;
 
   text-transform: capitalize;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   color: rgb(91, 89, 89);
 }
 
@@ -301,7 +301,7 @@ section {
 
 
 .modal-content h2 {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-size: 20px;
   padding-bottom: 7px;
   margin-bottom: 10px;
@@ -329,7 +329,7 @@ section {
   font-weight: 600;
   border-bottom: 1px solid black;
   font-size: 15px;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   outline: none;
 }
 
@@ -349,7 +349,7 @@ section {
   bottom: 20px;
   font-weight: 600;
   font-size: 13px;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   color: rgb(91, 89, 89);
 }
 
@@ -371,7 +371,7 @@ section {
   top: 50px;
   border-radius: 5px;
   border: none;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
 }
 
 .dropdown ul {
@@ -402,7 +402,7 @@ input[type="date"] {
 }
 
 .empty_msg {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   margin-top: 175px;
   font-size: 13px;
   font-weight: 400;
@@ -435,7 +435,7 @@ input[type="date"] {
   font-weight: 500;
   margin-bottom: 10px;
   color: black;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
 }
 
 .confirm_msg button {
@@ -445,7 +445,7 @@ input[type="date"] {
   border-radius: 10px;
   background-color: black;
   color: white;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: 600;
   border: none;
@@ -456,7 +456,5 @@ input[type="date"] {
   font-size: 14px;
   margin-top: 20px;
   margin-bottom: 10px;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
 }
-
-
