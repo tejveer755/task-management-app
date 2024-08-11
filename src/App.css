@@ -250,8 +250,8 @@ section {
   width: 98%;
   height: 50%;
   font-family: "Inter";
-  font-size: 12px;
-  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 500;
   white-space: wrap;
   overflow: auto;
   color: #787486;
@@ -260,7 +260,6 @@ section {
 .task_card .deadline {
   font-size: 12px;
   font-weight: 700;
-
   text-transform: capitalize;
   font-family: "Poppins", sans-serif;
   color: rgb(91, 89, 89);
@@ -310,10 +309,11 @@ section {
   border-bottom: 1px solid lightblue;
 }
 
-.dot{
+.dot {
   margin-bottom: 3px;
- 
+
 }
+
 .modal-content h2 span img {
   margin-left: 160px;
   background-color: transparent;
@@ -337,6 +337,14 @@ section {
   border: none;
   /* border-bottom: 1px solid black; */
   width: 95%;
+  min-height: 100px;
+  /* Set a minimum height */
+  resize: vertical;
+  /* Allows users to resize the text area vertically */
+  overflow: auto;
+  /* Ensure that content can be scrolled if it's too large */
+  box-sizing: border-box;
+  /* Ensure padding is included in the width/height */
   height: 60%;
   outline: none;
   max-height: 70%;
