@@ -62,6 +62,9 @@ const TaskModal = ({ isOpen, onClose, onAdd, onUpdate, currentTodo }) => {
                 await onAdd(todo);
             }
             setConfirmation(true);
+            setTitle("");
+            setDescription("");
+            setDeadline("");
         } catch (error) {
             console.error('Error submitting todo:', error);
             setErrorMessage('There was an error submitting the task. Please try again.');
