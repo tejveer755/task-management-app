@@ -64,6 +64,9 @@ function App() {
     }
   };
 
+  console.log(tasks);
+  
+
   // Categorizing tasks based on their status
   const expiredTasks = tasks.filter(task => task.status === 'expired');
   const activeTasks = tasks.filter(task => task.status === 'in-progress');

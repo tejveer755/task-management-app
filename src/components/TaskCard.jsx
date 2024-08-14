@@ -29,13 +29,13 @@ const TaskCard = ({ title, description, deadline, status, onEdit, onStart, onCom
           <img src={moreIcon} alt="More options" />
         </span>
       </h3>
-      
+
       {/* Task description (only the first line) */}
       <p className='description'>{truncateDescription(description)}</p>
 
       {/* Task status */}
       <p className={`${status} deadline`}>{status}</p>
-      
+
       {/* Task deadline, formatted as 'DD/MM/YYYY' */}
       <p className='deadline'>Deadline: {formatDate(deadline)}</p>
 
@@ -45,7 +45,7 @@ const TaskCard = ({ title, description, deadline, status, onEdit, onStart, onCom
           <ul>
             {/* Options available based on the task's current status */}
             {status !== 'expired' && status !== 'completed' && <li onClick={onEdit}>Edit Task</li>}
-            {status !== 'expired' && status !== 'completed' && <li onClick={onStart}>Start Task</li>}
+            {status === 'inactive' && <li onClick={onStart}>Start Task</li>}
             {status !== 'completed' && status !== 'expired' && <li onClick={onComplete}>Complete Task</li>}
             <li onClick={onDelete}>Remove Task</li>
           </ul>
